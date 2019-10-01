@@ -2,6 +2,10 @@
 
 A cross platform utility to copy images to clipboard.
 
+## Installation
+
+`npm install --save img-clipboard`
+
 ## Usage
 
 You can use the copyImg function to copy either an image `Buffer`, or a file path `String`.
