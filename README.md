@@ -1,6 +1,6 @@
 # img-clipboard
 
-A cross platform utility to copy images to clipboard.
+A cross platform Node.js utility to copy images to clipboard.
 
 ## Installation
 
@@ -41,8 +41,8 @@ There are a couple of extra exports to help you log errors when the required pac
 ```javascript
 const { copyImg, ErrorCodes, isWayland } = require('img-clipboard');
 
-const copyImg = async imageData => {
-  const [err, stdout, stderr] = await copyImg(Buffer.from(data, 'base64'));
+const copyToClipboard = async imageData => {
+  const [err, stdout, stderr] = await copyImg(Buffer.from(imageData, 'base64'));
   if (err) {
     if (err.code === ErrorCodes.COMMAND_NOT_FOUND && process.platform === 'linux')
       console.err(isWayland() ? 'wl-clipboard' : 'xclip' + ' is not installed');
