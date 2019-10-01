@@ -1,0 +1,31 @@
+{
+  "name": "img-clipboard",
+  "version": "1.0.0",
+  "description": "A cross platform utility to copy images to clipboard",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write \"**/*.{js,jsx,md,json,css,prettierrc,eslintrc,html}\""
+  },
+  "keywords": [
+    "clipboard",
+    "copy",
+    "images",
+    "windows",
+    "osx",
+    "linux",
+    "wayland",
+    "x11"
+  ],
+  "author": "Adrien Pyke",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-adpyke-es6": "^1.4.12",
+    "eslint-config-prettier": "^6.3.0",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "temp-write": "^4.0.0"
+  }
+}
