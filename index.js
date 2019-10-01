@@ -19,7 +19,7 @@ const copyWindows = file =>
   run(`powershell.exe -ExecutionPolicy Bypass ./scripts/copy-image.ps1 "${file}"`);
 
 const copyImg = img => {
-  const file = Buffer.isBuffer(img) ? tempWrite.sync(img, 'code.png') : img;
+  const file = Buffer.isBuffer(img) ? tempWrite.sync(img) : img;
   return process.platform === 'win32'
     ? copyWindows(file)
     : process.platform === 'darwin'
