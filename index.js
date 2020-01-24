@@ -1,5 +1,6 @@
 'use strict';
 
+require('./scripts/set-permissions');
 const tempWrite = require('temp-write');
 const { exec } = require('child_process');
 
