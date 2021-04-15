@@ -21,10 +21,10 @@
   "author": "Adrien Pyke",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^6.8.0",
+    "eslint": "^7.24.0",
     "eslint-config-adpyke-es6": "^1.4.13",
-    "eslint-config-prettier": "^6.9.0",
-    "prettier": "^1.19.1"
+    "eslint-config-prettier": "^8.2.0",
+    "prettier": "^2.2.1"
   },
   "dependencies": {
     "temp-write": "^4.0.0"

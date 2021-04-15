@@ -41,7 +41,7 @@ There are a couple of extra exports to help you log errors when the required pac
 ```javascript
 const { copyImg, ErrorCodes, isWayland } = require('img-clipboard');
 
-const copyToClipboard = async imageData => {
+const copyToClipboard = async (imageData) => {
   const [err, stdout, stderr] = await copyImg(Buffer.from(imageData, 'base64'));
   if (err) {
     if (err.code === ErrorCodes.COMMAND_NOT_FOUND && process.platform === 'linux')
