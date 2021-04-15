@@ -17,7 +17,9 @@ const copyLinux = file => (isWayland() ? copyWayland(file) : copyX11(file));
 const copyOsx = file => run(`./scripts/osx-copy-image "${file}"`);
 
 const copyWindows = file =>
-  run(`powershell.exe -ExecutionPolicy Bypass ./scripts/copy-image.ps1 "${file}"`);
+  run(
+    `powershell.exe -ExecutionPolicy Bypass Start-Process -NoNewWindow -FilePath file2clip.exe -ArgumentList "${file}"`
+  );
 
 const copyImg = img => {
   const file = Buffer.isBuffer(img) ? tempWrite.sync(img) : img;
