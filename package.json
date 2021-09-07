@@ -8,6 +8,10 @@
     "format": "prettier --write \"**/*.{js,jsx,md,json,css,prettierrc,eslintrc,html}\"",
     "postinstall": "node scripts/set-permissions.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kufii/img-clipboard.git"
+  },
   "keywords": [
     "clipboard",
     "copy",
