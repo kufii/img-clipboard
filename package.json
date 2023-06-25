@@ -27,6 +27,6 @@
     "prettier": "^2.2.1"
   },
   "dependencies": {
-    "temp-write": "^4.0.0"
+    "temp-write": "^5.0.0"
   }
 }
